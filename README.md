@@ -55,8 +55,8 @@ The port was implemented and tested on physical TM4C123G hardware.
 
 See the TM4C123G version here:
 
-[TM4C123G Traffic Intersection](LINK-TO-TM4C123-REPOSITORY)
+[TM4C123G Traffic Intersection](https://github.com/fawad-khan-1/Traffic-Intersection)
 
 ## Project Background
 
-The original Arduino implementation was completed as a university embedded systems project. The later TM4C123G version was created to revisit the original design using a different microcontroller platform and a lower-level embedded development environment.
+The original Arduino implementation was completed as a university embedded systems project. The later TM4C123G version was created to revisit the original design using a different microcontroller platform and a lower-level embedded development environment. 
