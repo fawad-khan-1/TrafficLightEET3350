@@ -64,7 +64,7 @@ The primary program is:
 
 The repository also contains a video recorded when the original project was completed demonstrating the traffic controller operating on physical hardware.
 
-## Demonstration
+## Hardware Demonstration
 
 The following video was recorded when the original project was completed and demonstrates the Arduino traffic intersection controller operating on the physical breadboard hardware:
 
@@ -78,7 +78,7 @@ The later project preserved the original traffic-control behavior while adapting
 
 The TM4C123G implementation was also tested on physical hardware.
 
-[View the TM4C123G Traffic Intersection Project](PASTE-TM4C123G-REPOSITORY-URL-HERE)
+[View the TM4C123G Traffic Intersection Project](https://github.com/fawad-khan-1/Traffic-Intersection)
 
 ## Project Purpose
 
