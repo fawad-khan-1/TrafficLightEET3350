@@ -64,15 +64,11 @@ The primary program is:
 
 The repository also contains a video recorded when the original project was completed demonstrating the traffic controller operating on physical hardware.
 
-## Hardware Demonstration
+## Demonstration
 
-A video demonstration of the completed TM4C123G implementation is included in this repository.
+The following video was recorded when the original project was completed and demonstrates the Arduino traffic intersection controller operating on the physical breadboard hardware:
 
-The video shows the traffic intersection controller operating on the physical TM4C123G LaunchPad and breadboard hardware, including the traffic-light sequences and response to the input buttons.
-
-[Open the TM4C123G Traffic Intersection Demonstration](demo/Tm4c123gtrafficcontroller-Demo3.mp4)
-
-> If GitHub does not display the video in its file preview, select **View raw** to open the video file.
+[View the Arduino Traffic Intersection Demonstration](demo/ArduinoTrafficController-Demo.mp4)
 
 ## TM4C123G Port
 
