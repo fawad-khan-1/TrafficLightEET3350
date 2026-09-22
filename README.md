@@ -72,16 +72,22 @@ The following video was recorded when the original project was completed and dem
 
 ## TM4C123G Port
 
-This Arduino project later served as the basis for a port to the Texas Instruments TM4C123G LaunchPad.
+This Arduino project later served as the basis for a port from the original Texas Instruments TM4C123G LaunchPad.
 
-The later project preserved the original traffic-control behavior while adapting the hardware interface for the TM4C123G platform.
+This later project preserved the original traffic-control behavior while adapting the hardware interface for the Arduino platform.
 
-The TM4C123G implementation was also tested on physical hardware.
+The TM4C123G implementation was also tested on physical hardware, and its hardware demonstration can be seen on the TM4C123G repository page by clicking the following link:
 
 [View the TM4C123G Traffic Intersection Project](https://github.com/fawad-khan-1/Traffic-Intersection)
 
 ## Project Purpose
 
+This project is a port of an earlier traffic intersection controller that I originally developed for the Texas Instruments TM4C123G microcontroller as part of a university undergraduate Embedded Systems course.
+
+The original TM4C123G implementation controls north-south traffic, east-west traffic, and a pedestrian crossing using LEDs and push-button inputs.
+
+For this project, I ported the original design to an Arduino Uno microcontroller. The traffic-control behavior was preserved while the TM4C123G-specific I/O was replaced with the Arduino-specific C library functions.The original project was implemented with TM4C123G GPIO control using the TivaWare Driver Library.
+
 The original project provided hands-on experience with microcontroller programming, digital inputs and outputs, traffic-control sequencing, breadboard circuit construction, and testing embedded software on physical hardware.
 
-Revisiting the project later by porting it to the TM4C123G provided an opportunity to implement the same control system on a different embedded platform.
+Revisiting the original project later by porting it to an Arduino Uno microcontroller provided an opportunity to implement the same control system on a different embedded platform.
