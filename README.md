@@ -68,7 +68,7 @@ A video demonstration of the physical implementation is also included in the rep
 
 The following video demonstrates the Arduino traffic intersection controller operating on the physical Arduino and breadboard hardware:
 
-[Open the Arduino Traffic Intersection Demonstration](demo/Arduino-Traffic-Intersection-Demo.mp4)
+[Open the Arduino Traffic Intersection Demonstration](demo/ArduinoTrafficController-Demo.mp4)
 
 > If GitHub does not display the video in its file preview, select **View raw** to open the video file.
 
