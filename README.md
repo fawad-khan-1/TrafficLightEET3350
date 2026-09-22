@@ -1,20 +1,20 @@
 # Arduino Traffic Intersection Controller
 
-This project implements a traffic intersection controller using an Arduino Uno, LEDs, and push-button inputs. It was originally developed as part of a university embedded systems course.
+This project implements a traffic intersection controller using an Arduino Uno, LEDs, and push-button inputs.
 
-The system models north-south traffic, east-west traffic, and a pedestrian crossing. The controller responds to traffic and pedestrian requests and executes the appropriate traffic-light sequence.
+The project is an Arduino port of a traffic intersection controller that I originally developed using a Texas Instruments TM4C123G microcontroller as part of a university embedded-systems laboratory assignment.
 
-The completed project was implemented and tested on physical Arduino hardware.
+The original TM4C123G version used direct register-level programming and hexadecimal register values. I later adapted the traffic-control logic to the Arduino platform and implemented and tested the Arduino version on physical hardware.
 
 ## Project Features
 
 - Arduino Uno microcontroller
+- Arduino C/C++
 - North-south traffic-light control
 - East-west traffic-light control
 - Pedestrian crossing sequence
 - Push-button traffic and pedestrian inputs
 - Red, yellow, and green LED outputs
-- Embedded C/C++ programming
 - Physical breadboard implementation
 - Hardware testing
 
@@ -30,7 +30,7 @@ The program monitors three types of requests:
 
 Based on the detected input, the program executes the appropriate traffic-control sequence and controls the LEDs representing the traffic signals.
 
-The original program is organized around three primary traffic-control functions:
+The program is organized around three primary traffic-control functions:
 
 - `NSTraffic()` – controls the north-south traffic sequence
 - `EWTraffic()` – controls the east-west traffic sequence
@@ -38,7 +38,7 @@ The original program is organized around three primary traffic-control functions
 
 ## Hardware
 
-The original implementation used:
+The implementation uses:
 
 - Arduino Uno
 - Breadboard
@@ -56,38 +56,54 @@ The completed circuit was assembled and tested on physical hardware.
 
 ## Repository Contents
 
-The repository contains the original Arduino source code used for the traffic intersection controller.
+The repository contains the Arduino source code used for the traffic intersection controller.
 
 The primary program is:
 
-- `TrafficLightEET3350.ino` – original Arduino traffic intersection program
+- `TrafficLightEET3350.ino` – Arduino traffic intersection program
 
-The repository also contains a video recorded when the original project was completed demonstrating the traffic controller operating on physical hardware.
+A video demonstration of the physical implementation is also included in the repository.
 
 ## Hardware Demonstration
 
-The following video was recorded when the original project was completed and demonstrates the Arduino traffic intersection controller operating on the physical breadboard hardware:
+The following video demonstrates the Arduino traffic intersection controller operating on the physical Arduino and breadboard hardware:
 
-[View the Arduino Traffic Intersection Demonstration](demo/ArduinoTrafficController-Demo.mp4)
+[Open the Arduino Traffic Intersection Demonstration](demo/Arduino-Traffic-Intersection-Demo.mp4)
 
-## TM4C123G Port
+> If GitHub does not display the video in its file preview, select **View raw** to open the video file.
 
-This Arduino project later served as the basis for a port from the original Texas Instruments TM4C123G LaunchPad.
+## Project Background
 
-This later project preserved the original traffic-control behavior while adapting the hardware interface for the Arduino platform.
+The traffic-controller design originated as an assigned university embedded-systems laboratory project using the Texas Instruments TM4C123G microcontroller.
 
-The TM4C123G implementation was also tested on physical hardware, and its hardware demonstration can be seen on the TM4C123G repository page by clicking the following link:
+The original TM4C123G implementation used direct register-level programming and hexadecimal register values to interact with the microcontroller hardware.
 
-[View the TM4C123G Traffic Intersection Project](https://github.com/fawad-khan-1/Traffic-Intersection)
+I later ported the traffic controller to the Arduino Uno, adapting the hardware interface to the Arduino platform while preserving the general traffic-control behavior.
+
+More recently, I returned to the TM4C123G and reimplemented the project using the TivaWare Driver Library instead of the original direct register-level approach.
+
+## TM4C123G Version
+
+The current TM4C123G implementation revisits the original university project using the TivaWare Driver Library and current development tools.
+
+[View the TM4C123G Traffic Intersection Project](PASTE-TM4C123G-REPOSITORY-URL-HERE)
+
+## Project History
+
+The traffic-controller project progressed through three implementations:
+
+1. **Original TM4C123G version** – University laboratory assignment implemented using direct register-level programming and hexadecimal register values.
+2. **Arduino Uno port** – Traffic-controller logic adapted to the Arduino platform.
+3. **TivaWare TM4C123G version** – Recent reimplementation of the original TM4C123G project using the TivaWare Driver Library.
 
 ## Project Purpose
 
-This project is a port of an earlier traffic intersection controller that I originally developed for the Texas Instruments TM4C123G microcontroller as part of a university undergraduate Embedded Systems course.
+This Arduino port demonstrates experience with:
 
-The original TM4C123G implementation controls north-south traffic, east-west traffic, and a pedestrian crossing using LEDs and push-button inputs.
-
-For this project, I ported the original design to an Arduino Uno microcontroller. The traffic-control behavior was preserved while the TM4C123G-specific I/O was replaced with the Arduino-specific C library functions.The original project was implemented with TM4C123G GPIO control using the TivaWare Driver Library.
-
-The original project provided hands-on experience with microcontroller programming, digital inputs and outputs, traffic-control sequencing, breadboard circuit construction, and testing embedded software on physical hardware.
-
-Revisiting the original project later by porting it to an Arduino Uno microcontroller provided an opportunity to implement the same control system on a different embedded platform.
+- Arduino programming
+- Embedded C/C++
+- Digital inputs and outputs
+- Embedded control logic
+- Breadboard circuit construction
+- Hardware testing
+- Adapting an embedded application to another microcontroller platform
