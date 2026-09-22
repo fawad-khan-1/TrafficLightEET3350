@@ -86,7 +86,7 @@ More recently, I returned to the TM4C123G and reimplemented the project using th
 
 The current TM4C123G implementation revisits the original university project using the TivaWare Driver Library and current development tools.
 
-[View the TM4C123G Traffic Intersection Project](PASTE-TM4C123G-REPOSITORY-URL-HERE)
+[View the TM4C123G Traffic Intersection Project](https://github.com/fawad-khan-1/Traffic-Intersection)
 
 ## Project History
 
